@@ -18,7 +18,7 @@ I am currently learning GraphQL and how to integrate it with a MERN Stack.
 
 - [LinkedIn](https://www.linkedin.com/in/abdul-raheem-67997525a)
 <!-- - [Twitter](https://twitter.com/your-twitter-handle) -->
-<!-- - [Portfolio](https://your-portfolio-url.com) -->
+- [Portfolio](https://abdulraheem-tau.vercel.app/)
 - [Email](mailto:abdul.raheem.11885@gmail.com)
 
 Feel free to reach out to me if you want to collaborate on a project, discuss the latest web development trends or just say hi! 
