@@ -18,7 +18,7 @@ Currently diving deeper into **GraphQL** and exploring **LLMs** (Large Language 
 
 ## 💬 Let's Connect
 
-- [Portfolio](https://abdulraheem-tau.vercel.app/)  
-- [Email](mailto:abdul.raheem.11885@gmail.com)
+- [Portfolio](https://abdulraheem-zeta.vercel.app/)  
+- [Email](mailto:abdulraheem.arhex@gmail.com)
 
 Feel free to reach out if you'd like to collaborate on an AI project, discuss NLP ideas, or just have a chat about tech!
