@@ -4,9 +4,7 @@ import deSeed from '../src/locales/de.json' with { type: 'json' };
 
 const CONTENT_ID = 'portfolio';
 
-let client;
 let collection;
-let dbName;
 
 function getMongoConfig() {
   return {
@@ -16,19 +14,35 @@ function getMongoConfig() {
 }
 
 export async function connectDb() {
+  if (collection) {
+    return collection;
+  }
+
+  const cached = globalThis.__portfolioMongo;
+
+  if (cached?.collection) {
+    collection = cached.collection;
+    return collection;
+  }
+
   const { uri, name } = getMongoConfig();
-  dbName = name;
-  client = new MongoClient(uri);
+  const client = new MongoClient(uri);
   await client.connect();
-  collection = client.db(dbName).collection('content');
+  collection = client.db(name).collection('content');
   await collection.createIndex({ _id: 1 });
+
+  globalThis.__portfolioMongo = { client, collection };
+
   await seedIfEmpty();
+  return collection;
 }
 
 export async function closeDb() {
-  if (client) {
-    await client.close();
-    client = null;
+  const cached = globalThis.__portfolioMongo;
+
+  if (cached?.client) {
+    await cached.client.close();
+    globalThis.__portfolioMongo = null;
     collection = null;
   }
 }
@@ -58,6 +72,7 @@ async function seedIfEmpty() {
 }
 
 export async function readAllContent() {
+  await connectDb();
   const doc = await collection.findOne({ _id: CONTENT_ID });
 
   if (!doc?.en || !doc?.de) {
@@ -73,6 +88,7 @@ export async function readLocale(locale) {
 }
 
 export async function writeLocale(locale, data) {
+  await connectDb();
   await collection.updateOne(
     { _id: CONTENT_ID },
     {
@@ -86,6 +102,7 @@ export async function writeLocale(locale, data) {
 }
 
 export async function writeAllContent({ en, de }) {
+  await connectDb();
   const update = { updatedAt: new Date() };
   if (en) update.en = en;
   if (de) update.de = de;
@@ -98,6 +115,7 @@ export async function writeAllContent({ en, de }) {
 }
 
 export async function resetFromSeed() {
+  await connectDb();
   await collection.updateOne(
     { _id: CONTENT_ID },
     {
