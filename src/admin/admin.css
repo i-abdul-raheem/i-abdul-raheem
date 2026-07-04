@@ -257,6 +257,41 @@
   gap: 0.25rem;
 }
 
+.admin-links-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-link-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-link-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.admin-link-url {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  word-break: break-all;
+}
+
+.admin-link-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.35rem;
+}
+
 @media (max-width: 900px) {
   .admin-shell {
     padding: 1rem;

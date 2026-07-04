@@ -9,6 +9,14 @@ import {
   writeLocale
 } from './db.js';
 import { createToken, isAuthorized } from './auth.js';
+import {
+  createTrackingLink,
+  listTrackingLinks,
+  deleteTrackingLink,
+  recordClick,
+  getPortfolioBaseUrl
+} from './links.js';
+import { sendPortfolioOpenEmail } from './email.js';
 
 const PORT = process.env.PORT || 3001;
 
@@ -69,6 +77,73 @@ app.put('/api/content', async (req, res) => {
   try {
     await writeAllContent(req.body ?? {});
     res.json({ ok: true });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/links', async (req, res) => {
+  if (!isAuthorized(req)) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  try {
+    const links = await listTrackingLinks();
+    res.json({ links });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/links', async (req, res) => {
+  if (!isAuthorized(req)) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  try {
+    const link = await createTrackingLink(req.body?.company, req);
+    res.status(201).json({ link });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.delete('/api/links', async (req, res) => {
+  if (!isAuthorized(req)) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  try {
+    const deleted = await deleteTrackingLink(req.body?.slug);
+    if (!deleted) {
+      return res.status(404).json({ error: 'Link not found' });
+    }
+    res.json({ ok: true });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/c/:slug', async (req, res) => {
+  try {
+    const { slug } = req.params;
+    const link = await recordClick(slug, {
+      userAgent: req.headers['user-agent'],
+      referer: req.headers.referer
+    });
+
+    if (!link) {
+      return res.status(404).send('Link not found');
+    }
+
+    sendPortfolioOpenEmail({
+      company: link.company,
+      slug: link.slug,
+      clickedAt: link.clickedAt,
+      userAgent: req.headers['user-agent']
+    }).catch((err) => console.error('Email failed:', err.message));
+
+    res.redirect(302, `${getPortfolioBaseUrl(req)}/`);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

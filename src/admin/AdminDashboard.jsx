@@ -8,6 +8,7 @@ import {
   PagesEditor,
   SiteEditor
 } from './editors';
+import LinksEditor from './LinksEditor';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
@@ -16,7 +17,8 @@ const tabs = [
   { id: 'projects', label: 'Projects' },
   { id: 'blog', label: 'Blog' },
   { id: 'pages', label: 'Pages' },
-  { id: 'site', label: 'Site' }
+  { id: 'site', label: 'Site' },
+  { id: 'links', label: 'Links' }
 ];
 
 function AdminDashboard() {
@@ -136,6 +138,8 @@ function AdminDashboard() {
           {activeTab === 'site' ? (
             <SiteEditor locale={locale} data={localeData} onChange={(updater) => updateLocale(locale, updater)} />
           ) : null}
+
+          {activeTab === 'links' ? <LinksEditor /> : null}
         </main>
       </div>
     </div>
