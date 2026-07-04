@@ -1,5 +1,7 @@
 # Abdul Raheem
 
+**Portfolio:** [https://i-abdul-raheem.vercel.app/](https://i-abdul-raheem.vercel.app/)
+
 NLP Engineer and M.Sc. Data Science student focused on LLM fine-tuning, RAG systems, automated text analysis, and full-stack AI development. I build scalable AI solutions with proven success in production NLP pipelines and technical team leadership.
 
 ## Professional Summary
