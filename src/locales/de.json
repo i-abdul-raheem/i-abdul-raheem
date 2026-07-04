@@ -1,0 +1,167 @@
+{
+  "home": {
+    "title": "Burak'sLab",
+    "eyebrow": "System-Engineering • KI • Low-Level-Forschung",
+    "subtitle": "System-Engineering, KI und Low-Level-Forschung. Ich baue Werkzeuge von Grund auf neu und konzentriere mich dabei auf Implementierungsdetails und direkte Lösungen.",
+    "skills": ["C++", "Rust", "C99", "PyTorch", "Transformers", "Compiler-Design"],
+    "cta": {
+      "primary": "Projekte erkunden",
+      "secondary": "Notizen lesen"
+    },
+    "spotlight": {
+      "label": "Aktueller Fokus",
+      "description": "Ich entwickle praktische Systems-Software und Werkzeuge rund um Laufzeiten, Compiler und Machine-Learning-Workflows.",
+      "bullets": [
+        "Laufzeit-Interna und Interpreter",
+        "Compiler- und Parser-Engineering",
+        "Angewandte NLP- und Modell-Experimente"
+      ]
+    },
+    "sections": {
+      "writing": {
+        "title": "Technisches Schreiben",
+        "viewAllLabel": "Alle Texte lesen"
+      },
+      "projects": {
+        "title": "Ingenieurprojekte",
+        "viewAllLabel": "Alle Projekte ansehen"
+      }
+    }
+  },
+  "blog": {
+    "title": "Technisches Schreiben",
+    "intro": "Notizen und Essays zu Systemen, Compilern, Low-Level-Engineering und den Abwägungen hinter praktischer Software.",
+    "eyebrow": "Schreiben",
+    "calloutLabel": "Aktueller Fokus",
+    "calloutText": "Systemdenken, Low-Level-Design und Software-Kultur."
+  },
+  "about": {
+    "title": "Über mich",
+    "intro": "System-Engineering, KI und Low-Level-Forschung. Ich baue Werkzeuge von Grund auf neu und konzentriere mich dabei auf Implementierungsdetails und direkte Lösungen.",
+    "eyebrow": "Über mich",
+    "highlights": [
+      { "label": "Fokus", "text": "System-Engineering & KI" },
+      { "label": "Ansatz", "text": "Von Grund auf bauen" }
+    ],
+    "body": [
+      "Der Großteil meiner Arbeit dreht sich um Implementierungsdetails, direkte Lösungen und Werkzeuge, die praktisch einsetzbar und leicht wiederkehrbar sind.",
+      "Ich interessiere mich für Low-Level-Software, Compiler-Design, Laufzeitsysteme und die technische Seite von Machine Learning.",
+      "Ich schreibe, um komplexe Systeme verständlicher zu machen und die Überlegungen hinter der Arbeit festzuhalten."
+    ],
+    "sidePanelTitle": "Interessensgebiete",
+    "sidePanelItems": [
+      "System-Engineering",
+      "Compiler-Design",
+      "Low-Level-Programmierung",
+      "Angewandte KI"
+    ]
+  },
+  "projectsPage": {
+    "title": "Projekte",
+    "intro": "Eine Auswahl an Engineering-Projekten rund um Laufzeit-Systeme, Tooling, Compiler und angewandte KI-Experimente.",
+    "eyebrow": "Katalog",
+    "spotlightLabel": "Schwerpunktthemen",
+    "spotlightText": "Laufzeitsysteme, Compiler, Tooling und angewandte KI.",
+    "projectLink": "→ Den kompletten Projektkatalog öffnen"
+  },
+  "common": {
+    "backToProjects": "← Zurück zum Projektkatalog",
+    "backToBlog": "← Zurück zum Blog",
+    "notFound": "Dieses Element konnte nicht gefunden werden.",
+    "theme": {
+      "light": "Helles Theme",
+      "dark": "Dunkles Theme"
+    },
+    "nav": {
+      "blog": "Blog",
+      "projects": "Projekte",
+      "about": "Über mich"
+    }
+  },
+  "posts": [
+    {
+      "slug": "why-markdown",
+      "title": "Warum benutzen wir noch immer Markdown??",
+      "href": "/blog/why-markdown",
+      "date": "2026-03-02",
+      "excerpt": "Markdown hat sich über Jahre gehalten, weil es Lesbarkeit, Portabilität und genau die richtige Menge an Struktur für das Web kombiniert.",
+      "tags": ["markdown", "standards", "writing"],
+      "body": [
+        "Markdown ist ein Werkzeug, das auf den ersten Blick deceptively einfach wirkt, aber seine Langlebigkeit verdankt es einem sehr praktischen Kompromiss. Es ist in Plain Text lesbar, leicht zu bearbeiten und flexibel genug, um alles von Dokumentationen bis hin zu Blogs und Entwicklerhinweisen zu bedienen.",
+        "Sein Erfolg liegt nicht daran, dass es perfekt ist. Es ist erfolgreich, weil es auf der richtigen Abstraktionsebene sitzt: Ausdrucksstark genug, um Struktur abzubilden, aber leicht genug, um für Menschen und Maschinen gleichermaßen zugänglich zu bleiben.",
+        "Dadurch ist es widerstandsfähiger, als viele Formate es sind. Selbst wenn neue Standards und Formate auftauchen, bietet Markdown weiterhin eine gemeinsame Sprache, die jeder verstehen und erweitern kann."
+      ]
+    },
+    {
+      "slug": "x86-simd-evolution",
+      "title": "Die Entwicklung von x86 SIMD: Von SSE bis AVX-512",
+      "href": "/blog/x86-simd-evolution",
+      "date": "2026-01-16",
+      "excerpt": "Die Geschichte von x86 SIMD ist die Geschichte schrittweiser Spezialisierung, breiter werdender Vektoren und zunehmenden Drucks, Hardware und Software auf dieselbe Sprache zu bringen.",
+      "tags": ["simd", "x86", "performance"],
+      "body": [
+        "SIMD-Befehlssätze auf x86 entwickelten sich von schmalen, pragmatischen Erweiterungen zu einer breiten Familie von Vektorausführungsmethoden. Jede Generation fügte mehr Breite, mehr Flexibilität und mehr Möglichkeiten hinzu, das Rechenmodell an moderne Workloads anzupassen.",
+        "Was die Entwicklung interessant macht, ist nicht nur der Roh-durchsatz. Es ist auch die Frage, wie Software sich an neue Befehlssätze anpassen musste und wie Compiler-Unterstützung, Mikroarchitektur und compilerfreundliche Programmiermuster gemeinsam reiften.",
+        "Das Ergebnis ist eine langfristige Plattform, auf der sich sorgfältige Low-Level-Arbeit immer noch lohnt, insbesondere wenn das Ziel ist, ein paar zusätzliche Zyklen aus kritischen Codepfaden herauszuholen."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "varm-vasm",
+      "title": "varm/vasm",
+      "href": "/projects/varm-vasm",
+      "year": "2026",
+      "tags": ["C99", "ASM", "Networking", "Multithreading"],
+      "description": "Eine ARMv7-inspirierte Bytecode-Virtual-Machine ohne Garbage Collector.",
+      "details": "Eine kompakte Laufzeit zum Experimentieren mit Befehlskodierung, Ausführungssemantik und Low-Level-Design ohne den Overhead eines vollständigen VM-Stacks.",
+      "body": [
+        "varm/vasm ist eine Bytecode-Virtual-Machine, die entwickelt wurde, um Instruktionssemantik und Ausführungsverhalten zu erforschen, ohne auf einen Garbage Collector zurückzugreifen.",
+        "Das Projekt konzentriert sich auf Low-Level-Klarheit: explizite Ablaufsteuerung, kompakte Befehlskodierung und ein Laufzeitmodell, das für Experimente zugänglich bleibt.",
+        "Es ist genau die Art von Projekt, die die System-Stack-Welt sichtbar macht, statt sie abstrakt erscheinen zu lassen."
+      ]
+    },
+    {
+      "slug": "arith",
+      "title": "Arith",
+      "href": "/projects/arith",
+      "year": "2025",
+      "tags": ["Rust", "Compiler Design", "VM"],
+      "description": "Ein vollständiger Kommandozeilen-Arithmetik-Interpreter, von Grund auf in Rust entwickelt. Enthält eine mehrstufige Pipeline aus Lexer, Pratt-Parser und einer Stack-basierten VM.",
+      "details": "Als praktisches Systems-Projekt konzentriert sich Arith auf Parser-Architektur, Fehlerbehandlung und eine klare Trennung zwischen Frontend und Ausführungsstufen.",
+      "body": [
+        "Arith ist ein kleines, aber vollständiges arithmetisches Interpretationssystem, das lexikalische Analyse, Parsing und Ausführung in bewusst strukturierter Weise durchläuft.",
+        "Die Implementierung soll zugleich lehrreich und praktisch wirken und zeigen, wie eine einfache Sprache in ein klares Laufzeitmodell kompiliert werden kann.",
+        "Es ist ein gutes Beispiel dafür, wie ein enges Problem zu einer vollständigen Ingenieursaufgabe wird, ohne unnötige Komplexität hinzuzufügen."
+      ]
+    },
+    {
+      "slug": "89crypt",
+      "title": "89crypt: Matrix-basierte Verschlüsselung",
+      "href": "/projects/89crypt",
+      "year": "2025",
+      "tags": ["Python", "Kryptografie", "Mathematik"],
+      "description": "Eine neuartige Verschlüsselungsbibliothek auf Basis periodischer Dezimalentwicklungen und Matrixtransformationen. Finalistin im I-MAT-Projektwettbewerb.",
+      "details": "Dieses Projekt erforscht ungewöhnliche mathematische Strukturen für Kodierung und Transformation mit besonderem Schwerpunkt auf theoretischer Neugier und nutzbarer Implementierung.",
+      "body": [
+        "89crypt untersucht unkonventionelle Verschlüsselungsideen, indem es periodische Dezimalentwicklungen mit Matrixtransformationen kombiniert.",
+        "Die Arbeit dreht sich weniger um konventionelle kryptografische Praxis und eher darum, ob ungewöhnliche mathematische Strukturen zu einer nutzbaren und interessanten Kodierung führen können.",
+        "Es ist ein starkes Beispiel dafür, wie Forschung neugier zu einer konkreten, testbaren Implementierung werden kann."
+      ]
+    },
+    {
+      "slug": "sumerian-nmt",
+      "title": "Altes Sumerisches NMT",
+      "href": "/projects/sumerian-nmt",
+      "year": "2023",
+      "tags": ["Python", "T5 Transformer", "NLP", "Perl"],
+      "description": "Ein neuronales Übersetzungssystem für die bidirektionale Übersetzung von altem Sumerisch und modernem Türkisch mit T5-Transformern.",
+      "details": "Dieses Projekt kombiniert transformer-basierte Übersetzung mit historischer Sprachmodellierung und zielt auf einen praktischen und forschungsfreundlichen Aufbau für Low-Resource-Übersetzung ab.",
+      "body": [
+        "Altes Sumerisches NMT beschäftigt sich mit der Herausforderung, zwischen einer historischen Sprache und einer modernen Sprache mit transformer-basierten Modellen zu übersetzen.",
+        "Das Projekt liegt an der Schnittstelle von Sprachwerkzeugen und historischer Korpusarbeit, wobei Datenscarcity, sprachliche Feinheiten und Modellgestaltung alle eine Rolle spielen.",
+        "Es ist eine Erinnerung daran, dass angewandte KI oft eine Mischung aus Ingenieursdisziplin und sorgfältiger Anpassung an unvollkommene Datensätze ist."
+      ]
+    }
+  ]
+}
