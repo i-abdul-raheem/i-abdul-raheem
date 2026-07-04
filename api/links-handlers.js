@@ -63,12 +63,16 @@ export async function redirectHandler(req, res) {
       return res.status(404).send('Link not found');
     }
 
-    sendPortfolioOpenEmail({
-      company: link.company,
-      slug: link.slug,
-      clickedAt: link.clickedAt,
-      userAgent: req.headers['user-agent']
-    }).catch((err) => console.error('Email failed:', err.message));
+    try {
+      await sendPortfolioOpenEmail({
+        company: link.company,
+        slug: link.slug,
+        clickedAt: link.clickedAt,
+        userAgent: req.headers['user-agent']
+      });
+    } catch (err) {
+      console.error('Email failed:', err.message);
+    }
 
     const destination = `${getPortfolioBaseUrl(req)}/`;
     res.writeHead(302, { Location: destination });

@@ -136,12 +136,16 @@ app.get('/c/:slug', async (req, res) => {
       return res.status(404).send('Link not found');
     }
 
-    sendPortfolioOpenEmail({
-      company: link.company,
-      slug: link.slug,
-      clickedAt: link.clickedAt,
-      userAgent: req.headers['user-agent']
-    }).catch((err) => console.error('Email failed:', err.message));
+    try {
+      await sendPortfolioOpenEmail({
+        company: link.company,
+        slug: link.slug,
+        clickedAt: link.clickedAt,
+        userAgent: req.headers['user-agent']
+      });
+    } catch (err) {
+      console.error('Email failed:', err.message);
+    }
 
     res.redirect(302, `${getPortfolioBaseUrl(req)}/`);
   } catch (error) {
