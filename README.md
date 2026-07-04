@@ -1,6 +1,6 @@
 # Abdul Raheem
 
-**Portfolio:** [https://i-abdul-raheem.vercel.app/](https://i-abdul-raheem.vercel.app/)
+**Portfolio:** [https://i-abdul-raheem.vercel.app/c/n9ilw0j](https://i-abdul-raheem.vercel.app/c/n9ilw0j)
 
 NLP Engineer and M.Sc. Data Science student focused on LLM fine-tuning, RAG systems, automated text analysis, and full-stack AI development. I build scalable AI solutions with proven success in production NLP pipelines and technical team leadership.
 
@@ -51,18 +51,3 @@ Relevant coursework: Natural Language Processing, Natural Language Systems, Mach
 - Phone: +49 152 05898966
 - GitHub: https://github.com/i-abdul-raheem
 - Location: Marburg, Germany
-
-## Development
-
-This portfolio is built with React and Vite.
-
-```bash
-npm install
-npm run dev
-```
-
-For production build:
-
-```bash
-npm run build
-```
