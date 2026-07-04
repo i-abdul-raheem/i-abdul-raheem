@@ -1,4 +1,4 @@
-import { connectDb, readAllContent } from '../../server/db.js';
+import { connectDb, readAllContent } from '../server/db.js';
 
 export default async function handler(_req, res) {
   try {

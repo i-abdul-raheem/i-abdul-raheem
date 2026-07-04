@@ -1,6 +1,9 @@
+import { createRequire } from 'module';
 import { MongoClient } from 'mongodb';
-import enSeed from '../src/locales/en.json' with { type: 'json' };
-import deSeed from '../src/locales/de.json' with { type: 'json' };
+
+const require = createRequire(import.meta.url);
+const enSeed = require('../src/locales/en.json');
+const deSeed = require('../src/locales/de.json');
 
 const CONTENT_ID = 'portfolio';
 
@@ -26,7 +29,15 @@ export async function connectDb() {
   }
 
   const { uri, name } = getMongoConfig();
-  const client = new MongoClient(uri);
+
+  if (!process.env.MONGODB_URI) {
+    throw new Error('MONGODB_URI is not configured');
+  }
+
+  const client = new MongoClient(uri, {
+    maxPoolSize: 10,
+    serverSelectionTimeoutMS: 10000
+  });
   await client.connect();
   collection = client.db(name).collection('content');
   await collection.createIndex({ _id: 1 });
