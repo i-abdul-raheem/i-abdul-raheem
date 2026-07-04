@@ -1,9 +1,7 @@
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
 
 function AboutPage() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { about } = dict;
 
   return (

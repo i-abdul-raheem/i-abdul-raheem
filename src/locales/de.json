@@ -1,20 +1,27 @@
 {
   "home": {
-    "title": "Burak'sLab",
-    "eyebrow": "System-Engineering • KI • Low-Level-Forschung",
-    "subtitle": "System-Engineering, KI und Low-Level-Forschung. Ich baue Werkzeuge von Grund auf neu und konzentriere mich dabei auf Implementierungsdetails und direkte Lösungen.",
-    "skills": ["C++", "Rust", "C99", "PyTorch", "Transformers", "Compiler-Design"],
+    "title": "Abdul'sLab",
+    "eyebrow": "NLP-Ingenieur • Machine Learning • LLM & RAG",
+    "subtitle": "NLP-Ingenieur und M.Sc. Data-Science-Student, der skalierbare KI-Lösungen entwickelt — von LLM-Fine-Tuning und RAG-Systemen bis hin zu Full-Stack-Anwendungen.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "LLMs",
+      "RAG",
+      "Next.js",
+      "FastAPI"
+    ],
     "cta": {
       "primary": "Projekte erkunden",
       "secondary": "Notizen lesen"
     },
     "spotlight": {
       "label": "Aktueller Fokus",
-      "description": "Ich entwickle praktische Systems-Software und Werkzeuge rund um Laufzeiten, Compiler und Machine-Learning-Workflows.",
+      "description": "M.Sc. Data Science an der Philipps-Universität Marburg, parallel zum Aufbau produktiver NLP-Systeme bei Devster Labs.",
       "bullets": [
-        "Laufzeit-Interna und Interpreter",
-        "Compiler- und Parser-Engineering",
-        "Angewandte NLP- und Modell-Experimente"
+        "LLM-Fine-Tuning und automatisierte Textanalyse",
+        "RAG-Systeme für interne Wissenssuche",
+        "Full-Stack-KI-Integration mit Python und JavaScript"
       ]
     },
     "sections": {
@@ -23,45 +30,52 @@
         "viewAllLabel": "Alle Texte lesen"
       },
       "projects": {
-        "title": "Ingenieurprojekte",
+        "title": "Ausgewählte Projekte",
         "viewAllLabel": "Alle Projekte ansehen"
       }
     }
   },
   "blog": {
     "title": "Technisches Schreiben",
-    "intro": "Notizen und Essays zu Systemen, Compilern, Low-Level-Engineering und den Abwägungen hinter praktischer Software.",
+    "intro": "Notizen zu NLP, Large Language Models, RAG-Pipelines und dem Engineering hinter skalierbaren KI-Systemen.",
     "eyebrow": "Schreiben",
     "calloutLabel": "Aktueller Fokus",
-    "calloutText": "Systemdenken, Low-Level-Design und Software-Kultur."
+    "calloutText": "LLM-Fine-Tuning, Retrieval-Augmented Generation und angewandtes NLP."
   },
   "about": {
     "title": "Über mich",
-    "intro": "System-Engineering, KI und Low-Level-Forschung. Ich baue Werkzeuge von Grund auf neu und konzentriere mich dabei auf Implementierungsdetails und direkte Lösungen.",
+    "intro": "NLP-Ingenieur und M.Sc. Data-Science-Student mit Erfahrung in LLM-Fine-Tuning, RAG-Systemen, automatisierter Textanalyse und Full-Stack-Entwicklung.",
     "eyebrow": "Über mich",
     "highlights": [
-      { "label": "Fokus", "text": "System-Engineering & KI" },
-      { "label": "Ansatz", "text": "Von Grund auf bauen" }
+      {
+        "label": "Rolle",
+        "text": "NLP-Ingenieur bei Devster Labs"
+      },
+      {
+        "label": "Ausbildung",
+        "text": "M.Sc. Data Science, Philipps-Universität Marburg"
+      }
     ],
     "body": [
-      "Der Großteil meiner Arbeit dreht sich um Implementierungsdetails, direkte Lösungen und Werkzeuge, die praktisch einsetzbar und leicht wiederkehrbar sind.",
-      "Ich interessiere mich für Low-Level-Software, Compiler-Design, Laufzeitsysteme und die technische Seite von Machine Learning.",
-      "Ich schreibe, um komplexe Systeme verständlicher zu machen und die Überlegungen hinter der Arbeit festzuhalten."
+      "Ich entwickle skalierbare KI-Lösungen, die Sprachmodelle mit realen Daten verbinden — von Lebenslauf-Ranking und automatisierter Annotation bis hin zu RAG-gestützter Suche in internen Datenbanken.",
+      "Bei Devster Labs entwickle ich NLP-Systeme, die die Kandidatenvorauswahl automatisieren, LLMs für domänenspezifische Aufgaben feinabstimmen und Modelle in produktive Workflows integrieren. Zuvor bei ConsoleDot leitete ich die Full-Stack-Entwicklung KI-gestützter Webanwendungen mit Next.js und generativer KI.",
+      "Derzeit absolviere ich einen Master in Data Science an der Philipps-Universität Marburg mit Schwerpunkt auf Natural Language Processing, Machine Learning, Deep Learning und Big Data Analytics."
     ],
-    "sidePanelTitle": "Interessensgebiete",
+    "sidePanelTitle": "Technische Fähigkeiten",
     "sidePanelItems": [
-      "System-Engineering",
-      "Compiler-Design",
-      "Low-Level-Programmierung",
-      "Angewandte KI"
+      "Python, JavaScript, SQL",
+      "PyTorch, TensorFlow, Scikit-learn",
+      "LLMs, Fine-Tuning, RAG, Generative AI",
+      "React.js, Next.js, FastAPI, Node.js",
+      "spaCy, NLTK, Pandas, NumPy"
     ]
   },
   "projectsPage": {
     "title": "Projekte",
-    "intro": "Eine Auswahl an Engineering-Projekten rund um Laufzeit-Systeme, Tooling, Compiler und angewandte KI-Experimente.",
+    "intro": "Eine Auswahl an NLP- und KI-Systemen aus beruflichen Rollen — von automatisierter Textanalyse und LLM-Fine-Tuning bis hin zu RAG-Chatbots und Full-Stack-KI-Anwendungen.",
     "eyebrow": "Katalog",
     "spotlightLabel": "Schwerpunktthemen",
-    "spotlightText": "Laufzeitsysteme, Compiler, Tooling und angewandte KI.",
+    "spotlightText": "NLP-Pipelines, LLM-Fine-Tuning, RAG-Systeme und Full-Stack-KI-Integration.",
     "projectLink": "→ Den kompletten Projektkatalog öffnen"
   },
   "common": {
@@ -78,89 +92,119 @@
       "about": "Über mich"
     }
   },
+  "site": {
+    "name": "Abdul Raheem",
+    "email": "abdulraheem.arhex@gmail.com",
+    "github": "https://github.com/i-abdul-raheem",
+    "location": "Marburg, Germany"
+  },
   "posts": [
     {
-      "slug": "why-markdown",
-      "title": "Warum benutzen wir noch immer Markdown??",
-      "href": "/blog/why-markdown",
-      "date": "2026-03-02",
-      "excerpt": "Markdown hat sich über Jahre gehalten, weil es Lesbarkeit, Portabilität und genau die richtige Menge an Struktur für das Web kombiniert.",
-      "tags": ["markdown", "standards", "writing"],
+      "slug": "building-rag-systems",
+      "title": "RAG-Systeme für interne Wissenssuche entwerfen",
+      "href": "/blog/building-rag-systems",
+      "date": "2025-11-14",
+      "excerpt": "Wie Retrieval-Augmented Generation Sprachmodelle mit internen Datenbanken für gezielte, kontextbewusste Suche verbindet.",
+      "tags": [
+        "rag",
+        "llm",
+        "nlp"
+      ],
       "body": [
-        "Markdown ist ein Werkzeug, das auf den ersten Blick deceptively einfach wirkt, aber seine Langlebigkeit verdankt es einem sehr praktischen Kompromiss. Es ist in Plain Text lesbar, leicht zu bearbeiten und flexibel genug, um alles von Dokumentationen bis hin zu Blogs und Entwicklerhinweisen zu bedienen.",
-        "Sein Erfolg liegt nicht daran, dass es perfekt ist. Es ist erfolgreich, weil es auf der richtigen Abstraktionsebene sitzt: Ausdrucksstark genug, um Struktur abzubilden, aber leicht genug, um für Menschen und Maschinen gleichermaßen zugänglich zu bleiben.",
-        "Dadurch ist es widerstandsfähiger, als viele Formate es sind. Selbst wenn neue Standards und Formate auftauchen, bietet Markdown weiterhin eine gemeinsame Sprache, die jeder verstehen und erweitern kann."
+        "Retrieval-Augmented Generation überbrückt die Lücke zwischen allgemeinen Sprachmodellen und organisationsspezifischem Wissen. Statt sich nur auf Trainingsdaten zu verlassen, ruft eine RAG-Pipeline relevante Dokumente aus internen Quellen ab und verankert die Antworten des Modells in diesem Kontext.",
+        "Die zentralen Engineering-Entscheidungen liegen in der Retrieval-Schicht: Chunking-Strategie, Embedding-Modell, Vektorspeicher-Design und wie aggressiv Ergebnisse gefiltert werden, bevor sie ans LLM weitergegeben werden. Jede Wahl beeinflusst Antwortqualität und Latenz.",
+        "In produktiven Systemen — wie der Kandidatensuche in internen Datenbanken — geht es nicht nur um genaue Antworten, sondern auch um Nachvollziehbarkeit: Nutzer müssen wissen, welche Quellen eine Antwort informiert haben, und das System muss mit wachsenden Daten skalieren."
       ]
     },
     {
-      "slug": "x86-simd-evolution",
-      "title": "Die Entwicklung von x86 SIMD: Von SSE bis AVX-512",
-      "href": "/blog/x86-simd-evolution",
-      "date": "2026-01-16",
-      "excerpt": "Die Geschichte von x86 SIMD ist die Geschichte schrittweiser Spezialisierung, breiter werdender Vektoren und zunehmenden Drucks, Hardware und Software auf dieselbe Sprache zu bringen.",
-      "tags": ["simd", "x86", "performance"],
+      "slug": "llm-fine-tuning-annotation",
+      "title": "LLMs für domänenspezifische Annotation feinabstimmen",
+      "href": "/blog/llm-fine-tuning-annotation",
+      "date": "2025-06-20",
+      "excerpt": "Praktische Erkenntnisse aus dem Fine-Tuning eines Large Language Models für automatische Audio-Daten-Annotation mit 92 % Genauigkeit.",
+      "tags": [
+        "fine-tuning",
+        "llm",
+        "annotation"
+      ],
       "body": [
-        "SIMD-Befehlssätze auf x86 entwickelten sich von schmalen, pragmatischen Erweiterungen zu einer breiten Familie von Vektorausführungsmethoden. Jede Generation fügte mehr Breite, mehr Flexibilität und mehr Möglichkeiten hinzu, das Rechenmodell an moderne Workloads anzupassen.",
-        "Was die Entwicklung interessant macht, ist nicht nur der Roh-durchsatz. Es ist auch die Frage, wie Software sich an neue Befehlssätze anpassen musste und wie Compiler-Unterstützung, Mikroarchitektur und compilerfreundliche Programmiermuster gemeinsam reiften.",
-        "Das Ergebnis ist eine langfristige Plattform, auf der sich sorgfältige Low-Level-Arbeit immer noch lohnt, insbesondere wenn das Ziel ist, ein paar zusätzliche Zyklen aus kritischen Codepfaden herauszuholen."
+        "Allgemeine Sprachmodelle bewältigen breite Aufgaben gut, aber domänenspezifische Annotation — wie das Labeln aus Audio abgeleiteter Textdaten — erfordert oft Fine-Tuning auf kuratierten Beispielen, die die Zielverteilung widerspiegeln.",
+        "Die Pipeline beginnt mit Datenqualität: repräsentative Stichproben, konsistente Label-Richtlinien und genügend Volumen für Edge Cases. Fine-Tuning passt dann das Modellverhalten an, ohne die Kosten und Latenz eines Basis-Modells bei jedem Beispiel.",
+        "Hohe Genauigkeit bei Annotationsaufgaben hängt weniger von der Modellgröße ab als von der Übereinstimmung zwischen Trainingsdaten und Produktionseingaben. Drift-Monitoring, Retraining bei neuen Fehlermustern und ein menschlicher Review-Loop halten das System langfristig zuverlässig."
       ]
     }
   ],
   "projects": [
     {
-      "slug": "varm-vasm",
-      "title": "varm/vasm",
-      "href": "/projects/varm-vasm",
-      "year": "2026",
-      "tags": ["C99", "ASM", "Networking", "Multithreading"],
-      "description": "Eine ARMv7-inspirierte Bytecode-Virtual-Machine ohne Garbage Collector.",
-      "details": "Eine kompakte Laufzeit zum Experimentieren mit Befehlskodierung, Ausführungssemantik und Low-Level-Design ohne den Overhead eines vollständigen VM-Stacks.",
+      "slug": "resume-ranking-system",
+      "title": "NLP-Lebenslauf-Ranking-System",
+      "href": "/projects/resume-ranking-system",
+      "year": "2024–2026",
+      "tags": [
+        "Python",
+        "NLP",
+        "Machine Learning"
+      ],
+      "description": "Ein NLP-basiertes Lebenslauf-Ranking-System, das die Kandidatenvorauswahl automatisiert und 90 % Effizienzgewinn erzielt.",
+      "details": "Entwickelt bei Devster Labs, um manuelle Lebenslaufprüfung durch automatisierte Bewertung und Ranking basierend auf Stellenanforderungen zu ersetzen.",
       "body": [
-        "varm/vasm ist eine Bytecode-Virtual-Machine, die entwickelt wurde, um Instruktionssemantik und Ausführungsverhalten zu erforschen, ohne auf einen Garbage Collector zurückzugreifen.",
-        "Das Projekt konzentriert sich auf Low-Level-Klarheit: explizite Ablaufsteuerung, kompakte Befehlskodierung und ein Laufzeitmodell, das für Experimente zugänglich bleibt.",
-        "Es ist genau die Art von Projekt, die die System-Stack-Welt sichtbar macht, statt sie abstrakt erscheinen zu lassen."
+        "Dieses System wendet Natural Language Processing an, um Kandidaten-Lebensläufe zu parsen, zu analysieren und gegen offene Stellen zu ranken — und reduziert so die Zeit für die Erstprüfung.",
+        "Die Pipeline umfasst Dokumentenaufnahme, Textextraktion, semantisches Matching gegen Stellenbeschreibungen und sortierte Ausgabe für Hiring-Teams. Effizienzsteigerungen erreichten 90 % im Vergleich zur manuellen Vorauswahl.",
+        "Das Projekt zeigt, wie gezielte NLP-Automatisierung unmittelbaren operativen Mehrwert in Recruiting-Workflows liefern kann."
       ]
     },
     {
-      "slug": "arith",
-      "title": "Arith",
-      "href": "/projects/arith",
-      "year": "2025",
-      "tags": ["Rust", "Compiler Design", "VM"],
-      "description": "Ein vollständiger Kommandozeilen-Arithmetik-Interpreter, von Grund auf in Rust entwickelt. Enthält eine mehrstufige Pipeline aus Lexer, Pratt-Parser und einer Stack-basierten VM.",
-      "details": "Als praktisches Systems-Projekt konzentriert sich Arith auf Parser-Architektur, Fehlerbehandlung und eine klare Trennung zwischen Frontend und Ausführungsstufen.",
+      "slug": "llm-audio-annotation",
+      "title": "LLM-Fine-Tuning für Audio-Annotation",
+      "href": "/projects/llm-audio-annotation",
+      "year": "2024–2026",
+      "tags": [
+        "PyTorch",
+        "LLM",
+        "Fine-Tuning"
+      ],
+      "description": "Fine-Tuning eines Large Language Models für automatische Audio-Daten-Annotation mit 92 % Genauigkeit.",
+      "details": "Entwickelt bei Devster Labs zur Automatisierung der Labelung aus Audio abgeleiteter Textdaten mit einem domänenangepassten Sprachmodell.",
       "body": [
-        "Arith ist ein kleines, aber vollständiges arithmetisches Interpretationssystem, das lexikalische Analyse, Parsing und Ausführung in bewusst strukturierter Weise durchläuft.",
-        "Die Implementierung soll zugleich lehrreich und praktisch wirken und zeigen, wie eine einfache Sprache in ein klares Laufzeitmodell kompiliert werden kann.",
-        "Es ist ein gutes Beispiel dafür, wie ein enges Problem zu einer vollständigen Ingenieursaufgabe wird, ohne unnötige Komplexität hinzuzufügen."
+        "Manuelle Annotation von Audiodaten ist langsam und bei Skalierung inkonsistent. Dieses Projekt feinabstimmt ein LLM auf kuratierten Annotationsbeispielen, um zuverlässige Labels automatisch zu erzeugen.",
+        "Der Workflow umfasst Datenvorbereitung, Modellauswahl, Fine-Tuning-Konfiguration, Evaluation gegen ein Test-Set und Deployment in die Annotations-Pipeline.",
+        "Das feinabgestimmte Modell erreichte 92 % Genauigkeit und reduzierte manuelle Prüfung erheblich, während Qualität durch regelmäßige menschliche Kontrolle gesichert wird."
       ]
     },
     {
-      "slug": "89crypt",
-      "title": "89crypt: Matrix-basierte Verschlüsselung",
-      "href": "/projects/89crypt",
-      "year": "2025",
-      "tags": ["Python", "Kryptografie", "Mathematik"],
-      "description": "Eine neuartige Verschlüsselungsbibliothek auf Basis periodischer Dezimalentwicklungen und Matrixtransformationen. Finalistin im I-MAT-Projektwettbewerb.",
-      "details": "Dieses Projekt erforscht ungewöhnliche mathematische Strukturen für Kodierung und Transformation mit besonderem Schwerpunkt auf theoretischer Neugier und nutzbarer Implementierung.",
+      "slug": "rag-candidate-chatbot",
+      "title": "RAG-Kandidatensuche-Chatbot",
+      "href": "/projects/rag-candidate-chatbot",
+      "year": "2024–2026",
+      "tags": [
+        "RAG",
+        "LLM",
+        "FastAPI"
+      ],
+      "description": "Ein RAG-gestützter Chatbot für gezielte Kandidatensuchen in internen Datenbanken.",
+      "details": "Entworfen und entwickelt bei Devster Labs, damit Recruiter Kandidatendaten in natürlicher Sprache abfragen können — mit Antworten, die in internen Daten verankert sind.",
       "body": [
-        "89crypt untersucht unkonventionelle Verschlüsselungsideen, indem es periodische Dezimalentwicklungen mit Matrixtransformationen kombiniert.",
-        "Die Arbeit dreht sich weniger um konventionelle kryptografische Praxis und eher darum, ob ungewöhnliche mathematische Strukturen zu einer nutzbaren und interessanten Kodierung führen können.",
-        "Es ist ein starkes Beispiel dafür, wie Forschung neugier zu einer konkreten, testbaren Implementierung werden kann."
+        "Der Chatbot kombiniert Retrieval-Augmented Generation mit der internen Kandidatendatenbank von Devster Labs und ermöglicht natürlichsprachliche Anfragen wie \"Kandidaten mit NLP-Erfahrung in Berlin finden\".",
+        "Die Architektur umfasst Dokument-Embedding, Vektorsuche, Kontext-Zusammenstellung und LLM-Antwortgenerierung — integriert in einen skalierbaren Backend-Service.",
+        "Durch die Verankerung von Antworten in tatsächlichen Datenbankeinträgen vermeidet das System Halluzinationen und macht interne Talentdaten über dialogbasierte Suche zugänglich."
       ]
     },
     {
-      "slug": "sumerian-nmt",
-      "title": "Altes Sumerisches NMT",
-      "href": "/projects/sumerian-nmt",
-      "year": "2023",
-      "tags": ["Python", "T5 Transformer", "NLP", "Perl"],
-      "description": "Ein neuronales Übersetzungssystem für die bidirektionale Übersetzung von altem Sumerisch und modernem Türkisch mit T5-Transformern.",
-      "details": "Dieses Projekt kombiniert transformer-basierte Übersetzung mit historischer Sprachmodellierung und zielt auf einen praktischen und forschungsfreundlichen Aufbau für Low-Resource-Übersetzung ab.",
+      "slug": "consoledot-ai-platform",
+      "title": "ConsoleDot KI-Plattform",
+      "href": "/projects/consoledot-ai-platform",
+      "year": "2023–2024",
+      "tags": [
+        "Next.js",
+        "Generative AI",
+        "React"
+      ],
+      "description": "Eine Kollaborationsplattform für Kreative mit Next.js und generativer KI zur NFT-Erstellung, plus eine Dating-App mit KI-gestützten Auto-Vorschlägen.",
+      "details": "Entwickelt bei ConsoleDot, wo ich die technische Entwicklung von Full-Stack-KI-Webanwendungen leitete.",
       "body": [
-        "Altes Sumerisches NMT beschäftigt sich mit der Herausforderung, zwischen einer historischen Sprache und einer modernen Sprache mit transformer-basierten Modellen zu übersetzen.",
-        "Das Projekt liegt an der Schnittstelle von Sprachwerkzeugen und historischer Korpusarbeit, wobei Datenscarcity, sprachliche Feinheiten und Modellgestaltung alle eine Rolle spielen.",
-        "Es ist eine Erinnerung daran, dass angewandte KI oft eine Mischung aus Ingenieursdisziplin und sorgfältiger Anpassung an unvollkommene Datensätze ist."
+        "Bei ConsoleDot entwickelte ich eine kollaborative Kreativplattform, die generative KI und Next.js nutzt, um Nutzern die Erstellung und Minting von NFTs zu ermöglichen — mit modernen Frontend-Patterns und KI-generierten Inhalts-Workflows.",
+        "Ich leitete auch die technische Entwicklung einer Dating-App mit KI-gestützter Auto-Vorschlagsfunktion, die Gesprächseinstiege und Profilverbesserungen basierend auf Nutzerkontext empfiehlt.",
+        "Beide Projekte erforderten Full-Stack-Verantwortung: API-Design, Frontend-Implementierung, KI-Integration und Teamkoordination über den gesamten Entwicklungszyklus."
       ]
     }
   ]

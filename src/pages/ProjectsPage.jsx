@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
 
 function ProjectsPage() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { projectsPage: projectsContent, projects } = dict;
 
   return (

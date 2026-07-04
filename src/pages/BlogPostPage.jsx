@@ -1,10 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
 
 function BlogPostPage() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { posts, common } = dict;
   const { slug } = useParams();
   const post = posts.find((item) => item.slug === slug);

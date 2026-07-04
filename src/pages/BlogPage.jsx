@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
 
 function BlogPage() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { blog, posts } = dict;
 
   return (

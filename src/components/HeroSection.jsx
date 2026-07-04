@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
+import SiteLogo from './SiteLogo';
 
 function HeroSection() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { home } = dict;
   const [prefix = home.title, suffix = ''] = home.title.split("'");
 
@@ -13,6 +12,7 @@ function HeroSection() {
     <section className="hero">
       <div className="hero-grid">
         <div className="hero-main">
+          <SiteLogo size={96} variant="hero" showText={false} />
           <p className="about-eyebrow">{home.eyebrow}</p>
           <h1 className="hero-title">
             <span className="logo-bgs">{prefix + "'"}</span>

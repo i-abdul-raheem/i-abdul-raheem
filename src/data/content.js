@@ -1,16 +1,16 @@
 export const siteContent = {
   home: {
-    title: "Burak's Lab",
-    subtitle: 'I build systems software, compiler-oriented tooling, and applied AI experiments with a focus on correctness, performance, and maintainable implementation.',
-    skills: ['Systems Programming', 'Compiler Design', 'Applied ML / NLP'],
+    title: "Abdul's Lab",
+    subtitle: 'NLP Engineer and M.Sc. Data Science student building scalable AI solutions — from LLM fine-tuning and RAG systems to full-stack applications.',
+    skills: ['NLP', 'Machine Learning', 'LLMs & RAG'],
     cta: {
       primary: 'Explore projects',
       secondary: 'Browse notes'
     },
     spotlight: {
       label: 'Current focus',
-      description: 'Designing practical software at the intersection of runtime systems, language tooling, and machine learning.',
-      bullets: ['Runtime internals and interpreters', 'Compiler and parser engineering', 'Applied NLP and model experimentation']
+      description: 'Pursuing an M.Sc. in Data Science at Philipps-Universität Marburg while building production NLP systems at Devster Labs.',
+      bullets: ['LLM fine-tuning and automated text analysis', 'RAG systems for internal knowledge search', 'Full-stack AI integration with Python and JavaScript']
     },
     sections: {
       writing: {
@@ -25,107 +25,107 @@ export const siteContent = {
   },
   blog: {
     title: 'Blog',
-    intro: 'Notes on systems, compilers, low-level engineering, and the occasional rant about software conventions.'
+    intro: 'Notes on NLP, large language models, RAG pipelines, and the engineering behind scalable AI systems.'
   },
   about: {
     title: 'About',
-    intro: 'I work at the intersection of systems engineering, tooling, and applied research, often building things from first principles.',
+    intro: 'NLP Engineer and M.Sc. Data Science student with experience in LLM fine-tuning, RAG systems, automated text analysis, and full-stack development.',
     body: [
-      'I am interested in low-level software, compiler design, performance tuning, and the practical side of making ambitious ideas executable.',
-      'Most of my work centers on writing software that is explicit, portable, and close to the underlying hardware when it matters.',
-      'When I am not building tools, I am usually writing about them so the reasoning behind the implementation is easier to revisit later.'
+      'I build scalable AI solutions that combine language models with real-world data — from resume ranking and automated annotation to RAG-powered search across internal databases.',
+      'At Devster Labs, I develop NLP systems that automate candidate pre-screening, fine-tune LLMs for domain-specific tasks, and integrate models into production workflows.',
+      'I am currently pursuing a Master\'s in Data Science at Philipps-Universität Marburg, with coursework in NLP, Machine Learning, Deep Learning, and Big Data Analytics.'
     ]
   },
   projects: {
     title: 'Projects',
-    intro: 'A selection of tools, interpreters, and experiments built to understand systems from the inside out.'
+    intro: 'A selection of NLP and AI systems built across professional roles — from automated text analysis and LLM fine-tuning to RAG chatbots and full-stack AI applications.'
   }
 };
 
 export const posts = [
   {
-    slug: 'why-markdown',
-    title: 'Why the heck are we still using Markdown??',
-    href: '/blog/why-markdown',
-    date: '2026-03-02',
-    excerpt: 'Markdown has survived for years because it balances readability, portability, and just enough structure for the web.',
-    tags: ['markdown', 'standards', 'writing'],
+    slug: 'building-rag-systems',
+    title: 'Designing RAG Systems for Internal Knowledge Search',
+    href: '/blog/building-rag-systems',
+    date: '2025-11-14',
+    excerpt: 'How retrieval-augmented generation connects language models to internal databases for targeted, context-aware search.',
+    tags: ['rag', 'llm', 'nlp'],
     body: [
-      'Markdown is one of those tools that feels deceptively simple on the surface, but its longevity comes from a very practical compromise. It is readable in plain text, easy to edit, and flexible enough to power everything from docs to blogs to developer notes.',
-      'Its success is not because it is perfect. It is successful because it sits at the right layer of abstraction: expressive enough to capture structure, but light enough to remain approachable for humans and machines alike.',
-      'That makes it resilient in a way most formats are not. Even when new standards and formats appear, Markdown still offers a common language that everyone can understand and extend.'
+      'Retrieval-augmented generation bridges the gap between general-purpose language models and organization-specific knowledge.',
+      'The key engineering decisions sit in the retrieval layer: chunking strategy, embedding model selection, vector store design, and how aggressively to filter results before passing them to the LLM.',
+      'In production systems, the goal is not just accurate answers but also traceability and scalability as underlying data grows.'
     ]
   },
   {
-    slug: 'x86-simd-evolution',
-    title: 'The Evolution of x86 SIMD: From SSE to AVX-512',
-    href: '/blog/x86-simd-evolution',
-    date: '2026-01-16',
-    excerpt: 'The story of x86 SIMD is a story of incremental specialization, widening vectors, and increasing pressure to make hardware and software speak the same language.',
-    tags: ['simd', 'x86', 'performance'],
+    slug: 'llm-fine-tuning-annotation',
+    title: 'Fine-Tuning LLMs for Domain-Specific Annotation',
+    href: '/blog/llm-fine-tuning-annotation',
+    date: '2025-06-20',
+    excerpt: 'Practical lessons from fine-tuning a large language model for automatic audio-data annotation, reaching 92% accuracy.',
+    tags: ['fine-tuning', 'llm', 'annotation'],
     body: [
-      'SIMD instruction sets on x86 evolved from narrow, pragmatic extensions into a broad family of vector execution mechanisms. Each generation added more width, more flexibility, and more opportunities to match the computation model to modern workloads.',
-      'What makes the progression interesting is not only the raw throughput. It is how software had to adapt to new instruction sets and how compiler support, microarchitecture, and compiler-friendly programming patterns all matured together.',
-      'The result is a long-running platform where low-level care still pays off, especially when the goal is to squeeze a few more cycles out of critical code paths.'
+      'General-purpose language models handle broad tasks well, but domain-specific annotation often requires fine-tuning on curated examples.',
+      'The pipeline starts with data quality: representative samples, consistent labeling guidelines, and enough volume to cover edge cases.',
+      'Reaching high accuracy is less about model size and more about alignment between training data and production inputs.'
     ]
   }
 ];
 
 export const projects = [
   {
-    slug: 'varm-vasm',
-    title: 'varm/vasm',
-    href: '/projects/varm-vasm',
-    year: '2026',
-    tags: ['C99', 'ASM', 'Networking', 'Multithreading'],
-    description: 'An ARMv7 inspired bytecode virtual machine without a garbage collector.',
-    details: 'A compact runtime for experimenting with instruction encoding, execution semantics, and low-level design without the overhead of a full VM stack.',
+    slug: 'resume-ranking-system',
+    title: 'NLP Resume Ranking System',
+    href: '/projects/resume-ranking-system',
+    year: '2024–2026',
+    tags: ['Python', 'NLP', 'Machine Learning'],
+    description: 'An NLP-based resume ranking system that automates candidate pre-screening, achieving 90% efficiency gains.',
+    details: 'Built at Devster Labs to replace manual resume review with automated scoring and ranking.',
     body: [
-      'varm/vasm is a bytecode virtual machine designed for exploring instruction semantics and execution behavior without leaning on a garbage collector.',
-      'The project is focused on low-level clarity: explicit control flow, compact instruction encoding, and a runtime model that remains approachable for experimentation.',
-      'It is the sort of project that makes the system stack feel visible rather than abstract.'
+      'This system applies NLP to parse, analyze, and rank candidate resumes against open positions.',
+      'The pipeline handles document ingestion, text extraction, semantic matching, and ranked output for hiring teams.',
+      'Efficiency improvements reached 90% compared to manual pre-screening.'
     ]
   },
   {
-    slug: 'arith',
-    title: 'Arith',
-    href: '/projects/arith',
-    year: '2025',
-    tags: ['Rust', 'Compiler Design', 'VM'],
-    description: 'A complete command-line arithmetic interpreter built from the ground up in Rust. Features a multi-stage pipeline: lexer, Pratt parser, and a stack-based VM.',
-    details: 'Built as a practical systems project, Arith focuses on parser architecture, error handling, and a clear separation between front-end and execution stages.',
+    slug: 'llm-audio-annotation',
+    title: 'LLM Fine-Tuning for Audio Annotation',
+    href: '/projects/llm-audio-annotation',
+    year: '2024–2026',
+    tags: ['PyTorch', 'LLM', 'Fine-Tuning'],
+    description: 'Fine-tuned a large language model for automatic audio-data annotation, reaching 92% accuracy.',
+    details: 'Developed at Devster Labs to automate the labeling of audio-derived text data.',
     body: [
-      'Arith is a small but complete arithmetic interpreter that walks through lexical analysis, parsing, and execution in a deliberately structured way.',
-      'The implementation is intended to feel educational and practical at once, showing how a simple language can be compiled into a straightforward runtime model.',
-      'It is a good example of turning a narrow problem into a full-stack engineering exercise without adding unnecessary complexity.'
+      'Manual annotation of audio data is slow and inconsistent at scale.',
+      'The workflow covers data preparation, model selection, fine-tuning, evaluation, and deployment.',
+      'The fine-tuned model achieved 92% accuracy with periodic human oversight.'
     ]
   },
   {
-    slug: '89crypt',
-    title: '89crypt: Matrix-Based Encryption',
-    href: '/projects/89crypt',
-    year: '2025',
-    tags: ['Python', 'Cryptography', 'Math'],
-    description: 'A novel encryption library based on periodic decimal expansions and matrix transformations. Finalist in the I-MAT Project Competition.',
-    details: 'This project explores unusual mathematical structures for encoding and transformation, with an emphasis on theoretical curiosity and usable implementation.',
+    slug: 'rag-candidate-chatbot',
+    title: 'RAG Candidate Search Chatbot',
+    href: '/projects/rag-candidate-chatbot',
+    year: '2024–2026',
+    tags: ['RAG', 'LLM', 'FastAPI'],
+    description: 'A RAG-powered chatbot for targeted candidate searches across internal databases.',
+    details: 'Designed at Devster Labs for natural-language queries over internal candidate records.',
     body: [
-      '89crypt investigates non-standard encryption ideas by combining periodic decimal expansions with matrix transformations.',
-      'The work is less about conventional cryptographic practice and more about exploring whether unusual mathematical structures can produce a usable and interesting encoding scheme.',
-      'It is a strong example of how research curiosity can become a concrete, testable implementation.'
+      'The chatbot combines RAG with internal candidate databases for conversational talent search.',
+      'The architecture includes embedding, vector search, context assembly, and LLM response generation.',
+      'Grounding answers in database records avoids hallucination while making talent data accessible.'
     ]
   },
   {
-    slug: 'sumerian-nmt',
-    title: 'Ancient Sumerian NMT',
-    href: '/projects/sumerian-nmt',
-    year: '2023',
-    tags: ['Python', 'T5 Transformer', 'NLP', 'Perl'],
-    description: 'A Neural Machine Translation system for the bidirectional translation of ancient Sumerian and modern Turkish using T5 Transformers.',
-    details: 'This project combines transformer-based translation with historical language modeling, aiming for a practical and research-friendly setup for low-resource translation.',
+    slug: 'consoledot-ai-platform',
+    title: 'ConsoleDot AI Platform',
+    href: '/projects/consoledot-ai-platform',
+    year: '2023–2024',
+    tags: ['Next.js', 'Generative AI', 'React'],
+    description: 'A collaborative platform for creatives using Next.js and generative AI, plus a dating app with AI auto-suggestions.',
+    details: 'Built at ConsoleDot with full-stack ownership of AI-powered web applications.',
     body: [
-      'Ancient Sumerian NMT focuses on the challenge of translating between a historical language and a modern one using transformer-based models.',
-      'The project sits at the boundary between language tooling and historical corpus work, where data scarcity, linguistic nuance, and model design all matter.',
-      'It is a reminder that applied AI is often a mix of engineering discipline and careful adaptation to imperfect datasets.'
+      'Developed a collaborative creative platform using generative AI and Next.js for NFT creation.',
+      'Led technical development of a dating app with AI-powered auto-suggestion features.',
+      'Both projects required API design, frontend implementation, AI integration, and team coordination.'
     ]
   }
 ];

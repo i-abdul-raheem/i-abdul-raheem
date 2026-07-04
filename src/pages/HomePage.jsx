@@ -1,11 +1,9 @@
 import HeroSection from '../components/HeroSection';
 import SectionList from '../components/SectionList';
-import { useLanguage } from '../language';
-import { getDictionary } from '../locales';
+import { usePortfolio } from '../hooks/usePortfolio';
 
 function HomePage() {
-  const { locale } = useLanguage();
-  const dict = getDictionary(locale);
+  const { dict } = usePortfolio();
   const { home, posts, projects } = dict;
 
   return (

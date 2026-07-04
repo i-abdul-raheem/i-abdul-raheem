@@ -1,58 +1,54 @@
-# Burak Güngör
+# Abdul Raheem
 
-Software engineer and researcher focused on systems software, compiler-oriented tooling, and applied AI. I build practical tools from the ground up, with emphasis on correctness, performance, maintainability, and clear implementation.
+NLP Engineer and M.Sc. Data Science student focused on LLM fine-tuning, RAG systems, automated text analysis, and full-stack AI development. I build scalable AI solutions with proven success in production NLP pipelines and technical team leadership.
 
 ## Professional Summary
 
-I work at the intersection of systems engineering, low-level programming, compiler design, and machine learning. My interests span runtime systems, interpreters, parser engineering, language tooling, and applied NLP.
+NLP Engineer at Devster Labs with experience in resume ranking, LLM fine-tuning for annotation, and RAG-powered chatbots. Currently pursuing an M.Sc. in Data Science at Philipps-Universität Marburg.
 
-My approach is grounded in direct solutions, careful engineering tradeoffs, and technical writing that makes complex ideas easier to understand and reuse.
+My work spans natural language processing, machine learning, deep learning, and full-stack integration of AI systems using Python, JavaScript, and modern web frameworks.
 
 ## Core Competencies
 
-- Systems programming and low-level software
-- Compiler and parser engineering
-- Runtime internals and virtual machines
-- C, C++, Rust, and Python
-- Applied machine learning and NLP
-- Performance-oriented implementation and debugging
-- Technical writing and software documentation
+- NLP, Machine Learning, Deep Learning
+- LLMs, Generative AI, Fine-Tuning, RAG
+- Python, JavaScript, SQL
+- PyTorch, TensorFlow, Scikit-learn, spaCy, NLTK
+- React.js, Next.js, Tailwind CSS
+- Node.js, Express.js, FastAPI, Fastify
 
-## Selected Experience and Focus Areas
+## Experience
 
-- Building practical software systems with attention to implementation detail
-- Exploring compiler pipelines, parsing strategies, and execution models
-- Developing experiments around machine learning and language processing
-- Writing about systems, architecture, and engineering tradeoffs
+### Devster Labs LLC — NLP Engineer (Feb 2024 – Jun 2026)
 
-## Selected Projects
+- Developed an NLP-based resume ranking system for automated candidate pre-screening (90% efficiency gain)
+- Fine-tuned a large language model for automatic audio-data annotation (92% accuracy)
+- Designed and developed a RAG chatbot for targeted candidate searches across internal databases
+- Integrated language models and internal data sources into scalable AI-powered systems
 
-### varm/vasm
-A compact ARMv7-inspired bytecode virtual machine for exploring instruction encoding, execution semantics, and low-level design without the overhead of a full VM stack.
+### ConsoleDot — Software Engineer (Jan 2023 – Feb 2024)
 
-### Arith
-A complete arithmetic interpreter built in Rust with a multi-stage pipeline consisting of a lexer, Pratt parser, and a stack-based VM.
+- Developed a collaborative platform for creatives using Next.js and generative AI to create NFTs
+- Led the technical development of a dating app with an AI-powered auto-suggestion function
 
-### 89crypt
-A matrix-based encryption library exploring mathematical structures for encoding and transformation.
+## Education
 
-### Ancient Sumerian NMT
-A neural machine translation system for translating ancient Sumerian and modern Turkish using transformer-based models.
+**Philipps-Universität Marburg** — M.Sc. Data Science (since Oct 2024)
 
-## Technical Writing
+Relevant coursework: Natural Language Processing, Natural Language Systems, Machine Learning, Deep Learning, Big Data Analytics, Data Integration
 
-Selected topics include:
+## Languages
 
-- Markdown and document standards
-- x86 SIMD and performance-oriented architecture
-- Software conventions and engineering tradeoffs
-- Systems design and implementation reasoning
+- English: Fluent
+- German: Basic
+- Urdu: Native
 
 ## Contact
 
-- Email: burakgungor11235@gmail.com
-- GitHub: https://github.com/burakgungor11235
-- LinkedIn: https://www.linkedin.com/in/burak-güngör11235
+- Email: abdulraheem.arhex@gmail.com
+- Phone: +49 152 05898966
+- GitHub: https://github.com/i-abdul-raheem
+- Location: Marburg, Germany
 
 ## Development
 
